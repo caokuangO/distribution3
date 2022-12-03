@@ -1,0 +1,25 @@
+server:
+  port: 83
+
+spring:
+  application:
+    name: order
+  cloud:
+    stream:
+      binders:
+        # 定义一个名为 myKafka 的 Kafka Binder
+        myKafka:
+          type: kafka
+          # Kafka的地址信息
+          environment:
+            spring:
+              kafka:
+                bootstrap-servers: 127.0.0.1:9092
+      bindings:
+        billOutput:
+          # 通道目的地: topic.bill 主题
+          destination: topic.bill
+          # 消息类型定义: json
+          content-type: application/json
+          # 使用刚刚定义过的Binder
+          binder: myKafka
