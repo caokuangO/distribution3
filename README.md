@@ -1,5 +1,7 @@
 # distribution3
 a.第一题的工程是MyStreamDemo和SpringKafkaDemo;
+![image](https://user-images.githubusercontent.com/43924951/205458319-29b92e81-a903-4340-83ac-e9f25604d2b8.png)
+![image](https://user-images.githubusercontent.com/43924951/205458345-c7b0862d-5f2e-496f-9a52-418abe58b7d1.png)
 
 b.第二题的工程是apollo_t;
 
